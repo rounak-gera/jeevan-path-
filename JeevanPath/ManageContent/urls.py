@@ -6,7 +6,7 @@ from .views import (
     UpcomingFacilitiesViewSet, BlogListView, BlogDetailView, AboutUsViewSet, DiningViewSet, ContactFormViewSet
 )
 
-# router = DefaultRouter()
+router = DefaultRouter()
 # router.register(r'home-sections', HomeSectionViewSet)
 # router.register(r'accommodations', AccommodationViewSet)
 # router.register(r'offers', OffersViewSet)
@@ -18,8 +18,8 @@ from .views import (
 # router.register(r'dining', DiningViewSet)
 # router.register(r'contact-forms', ContactFormViewSet)
 
-# urlpatterns = [
-#     path('', include(router.urls)),
-#     path('blogs/', BlogListView.as_view(), name='blog-list'),
-#     path('blogs/<int:pk>/', BlogDetailView.as_view(), name='blog-detail'),
-# ]
+urlpatterns = [
+    path('', include(router.urls)),
+    path('blogs/', BlogListView.as_view(), name='blog-list'),
+    path('blogs/<int:pk>/', BlogDetailView.as_view(), name='blog-detail'),
+]
