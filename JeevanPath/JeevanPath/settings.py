@@ -57,6 +57,12 @@ MIDDLEWARE = [
     "django.middleware.common.CommonMiddleware",
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://jeevanpath.com",
+    "https://jeevan-path.onrender.com",
+]
+
+
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5500",
     "http://localhost:5500",
