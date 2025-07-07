@@ -64,6 +64,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://jeevanpath.com",
     'http://localhost:3000',
     'http://10.0.0.138:3000',
+    "https://jeevan-path.onrender.com"
 ]
 CORS_ALLOW_CREDENTIALS = True # If needed for cookies or auth
 
